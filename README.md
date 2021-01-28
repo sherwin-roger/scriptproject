@@ -42,7 +42,7 @@ Publish the website in the given URL.
 </script>
 ```
 ## OUTPUT:
-![output](./static/img/output.jpg)
+![output](./static/img/output.png)
 
 ## RESULT:
 Thus a website is designed for the volume of cylinder and area of triangle is done and it is hosted in the URL http://sherwin.student.saveetha.in:8000/volumeofcylinder. HTML code is validated.
