@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/volumeofcylinder.css' %}">
+    </head>
+    <body>
+        <h1>AREA OF TRIANGLE</h1>
+
+        <div id="inputs">
+            <form method="POST" >
+                BASE: <input id="b" value={{value1}}>
+                HEIGHT: <input id="h" value={{value2}}>
+            </form>
+        </div>
+        <button id="submit">Calculate</button>
+        <span id="area"></span>
+    </body>
+</html>
+
+<script>
+    document.getElementById('submit').onclick = area;
+    function area() {
+  
+        var b = document.getElementById('b').value;
+        b = Number(b);
+
+  
+        var h = document.getElementById('h').value;
+        h = Number(h);
+  
+        var answer= b*h/2
+
+        document.getElementById('area').innerHTML = parseFloat(answer);
+}
+</script>

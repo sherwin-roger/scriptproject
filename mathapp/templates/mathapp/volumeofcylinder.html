@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/volumeofcylinder.css' %}">
+    </head>
+    <body>
+        <h1>VOLUME OF CYLINDER</h1>
+
+        <div id="inputs">
+            <form method="POST" >
+                RADIUS: <input id="r" value={{value1}}>
+               HEIGHT: <input id="h" value={{value2}}>
+            </form>
+        </div>
+        <button id="submit">Calculate</button>
+        <span id="volume"></span>
+    </body>
+</html>
+
+<script>
+    document.getElementById('submit').onclick = volume;
+
+    function volume() {
+  
+        var r = document.getElementById('r').value;
+        r = Number(r);
+        console.log(r)
+  
+        var h = document.getElementById('h').value;
+        h = Number(h);
+  
+        var answer=Math.PI*r*r*h;
+        console.log(answer)
+
+        document.getElementById('volume').innerHTML = parseFloat(answer);
+  
+}
+</script>
