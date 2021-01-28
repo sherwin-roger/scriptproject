@@ -20,9 +20,29 @@ Publish the website in the given URL.
 
 
 ## PROGRAM:
+```
+<script>
+    document.getElementById('submit').onclick = volume;
 
+    function volume() {
+  
+        var r = document.getElementById('r').value;
+        r = Number(r);
+        console.log(r)
+  
+        var h = document.getElementById('h').value;
+        h = Number(h);
+  
+        var answer=Math.PI*r*r*h;
+        console.log(answer)
 
+        document.getElementById('volume').innerHTML = parseFloat(answer);
+  
+}
+</script>
+```
 ## OUTPUT:
-
+![output](./static/img/output.jpg)
 
 ## RESULT:
+Thus a website is designed for the volume of cylinder and area of triangle is done and it is hosted in the URL http://sherwin.student.saveetha.in:8000/volumeofcylinder. HTML code is validated.
